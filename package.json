@@ -1,0 +1,23 @@
+{
+  "name": "my-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "packageManager": "pnpm@8.14.1",
+  "scripts": {
+    "web": "pnpm -F @my-monorepo/web",
+    "admin": "pnpm -F @my-monorepo/admin",
+    "dev": "pnpm -r dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "vite-plugin-dts": "^3.7.1",
+    "vite-tsconfig-paths": "^4.2.3"
+  },
+  "dependencies": {
+    "@monorepo/core": "workspace:^"
+  }
+}
