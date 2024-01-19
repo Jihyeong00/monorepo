@@ -1,10 +1,11 @@
-import styles from './page.module.css'
-import {Button} from "@monorepo/share/src/components/Button";
+import { Button } from "@monorepo/share/src/components/Button";
+
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Button/>
+      <Button />
     </main>
-  )
+  );
 }

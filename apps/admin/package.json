@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@monorepo/libs": "workspace:^",
+    "@monorepo/config": "workspace:^",
     "@monorepo/share": "workspace:^",
     "next": "14.0.4",
     "react": "^18",

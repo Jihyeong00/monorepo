@@ -5,9 +5,18 @@
   "packageManager": "pnpm@8.14.1",
   "scripts": {
     "web": "pnpm --filter @monorepo/web",
-    "admin": "pnpm --filter @monorepo/admin"
+    "admin": "pnpm --filter @monorepo/admin",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^8.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged & lint"
+    }
+  }
 }
