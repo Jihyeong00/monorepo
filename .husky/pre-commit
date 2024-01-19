@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-pnpm prettier -r --staged & pnpm -r lint --fix
+pnpm prettier & pnpm -r lint
