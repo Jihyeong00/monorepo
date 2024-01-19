@@ -1,4 +1,4 @@
-import { cssToken } from "../styles/css-token";
+import { cssToken } from "../../styles/css-token";
 
 export const Button = () => {
   return (
