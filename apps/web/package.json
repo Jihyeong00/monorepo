@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint --fix"
+    "lint": "next lint --fix",
+    "format" : "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "dependencies": {
     "@monorepo/config": "workspace:^",
