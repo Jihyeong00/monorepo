@@ -1,1 +1,1 @@
-module.exports = require('@monorepo/libs/.eslintrc');
+module.exports = require('@monorepo/config/.eslintrc');

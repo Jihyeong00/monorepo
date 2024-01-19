@@ -6,6 +6,7 @@
   "scripts": {
     "web": "pnpm --filter @monorepo/web",
     "admin": "pnpm --filter @monorepo/admin",
+    "share": "pnpm --filter @monorepo/share",
     "prepare": "husky install"
   },
   "keywords": [],
