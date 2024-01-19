@@ -1,23 +1,23 @@
 {
-  "name": "my-monorepo",
+  "name": "monorepo",
   "version": "1.0.0",
   "description": "",
   "packageManager": "pnpm@8.14.1",
   "scripts": {
-    "web": "pnpm -F @my-monorepo/web",
-    "admin": "pnpm -F @my-monorepo/admin",
-    "dev": "pnpm -r dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "web": "pnpm --filter @monorepo/web",
+    "admin": "pnpm --filter @monorepo/admin",
+    "share": "pnpm --filter @monorepo/share",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^8.56.0",
-    "vite-plugin-dts": "^3.7.1",
-    "vite-tsconfig-paths": "^4.2.3"
+    "husky": "^8.0.0"
   },
-  "dependencies": {
-    "@monorepo/core": "workspace:^"
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged & lint"
+    }
   }
 }
